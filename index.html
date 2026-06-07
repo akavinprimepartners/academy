@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>AkaVin Academy | Future of Built Environment</title>
+    <title>Akavin Academy | Future of Built Environment</title>
     <!-- Razorpay JS SDK -->
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <!-- Axios for IP geolocation -->
@@ -244,8 +244,9 @@
 <body>
 <div class="container">
     <div class="header">
-        <div class="logo">
-            <h1>🏗️ AkaVin Academy</h1>
+        <div class="logo-area">
+      <img src="assets/logo.png" alt="Akavin Logo" class="logo-img">
+            <h1>🏗️ Akavin Academy</h1>
             <p>digital built ecosystem · global credentials</p>
         </div>
         <div class="currency-card" id="currencyWidget">
@@ -280,7 +281,7 @@
         <div class="feature-item">📈 Live Doubt Solving & Portfolio</div>
     </div>
     <footer>
-        © 2025 AkaVin Academy — bridging AI, BIM & digital construction. Secure payments via Razorpay.<br>
+        © 2025 Akavin Academy — bridging AI, BIM & digital construction. Secure payments via Razorpay.<br>
         Currency auto-selects based on your IP country (INR/USD/GBP/AED).
     </footer>
 </div>
@@ -425,7 +426,7 @@
             key: "rzp_test_YourDemoKey",   // TEST KEY - replace with live key later. For demo, user must replace but we show alert.
             amount: amount,                 // in smallest currency unit
             currency: currencyCode,
-            name: "AkaVin Academy",
+            name: "Akavin Academy",
             description: `${courseName} Enrollment`,
             image: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
             order_id: undefined,   // For simplicity, we will not create real order but we can still trigger payment.
@@ -447,8 +448,8 @@
             // But as per docs, they require order_id to be created from server, so we will add a note to backend API. Meanwhile, I simulate via dummy orderId.
             // It's for assessment only, but will clearly show IP currency detection + payment modal.
             prefill: {
-                name: "Student AkaVin",
-                email: "student@akavin.online",
+                name: "Student Akavin",
+                email: "info@akavin.online",
                 contact: "+919876543210"
             },
             theme: {
